@@ -1,0 +1,30 @@
+Estrutura de diretórios
+App
+	Controllers
+	Models
+	Views
+Core 	(onde ficará a estrutura principal do framework)
+logs 	(registros)
+public	(arquivos públicos como js, css e html e o frontend controller)
+vendor	(biblioteca de terceiros)  
+
+Frontend Controller
+O front controller é usado para receber todos os pedidos da aplicação.
+É possível usar a query string, ou a parte depois do ponto de interrogação, para decidir onde rotear o pedido.
+
+www.url.io/index.php?/home
+www.url.io/index.php?/show_post/123
+
+A query string será a request URL ou route (rota). Nela é possível suprimir o nome index.php por ser o arquivo padrão de acesso pelo servidor.
+
+Através da vanity URL ou pretty URL é possível ocupar a query string do endereço do navegador.
+
+Para isso é necessário no diretório public da aplicação criar um arquivo .htaccess com as linhas
+
+# Remove o index.php da solicitação, mas mantém a string de consulta
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?$1 [L,QSA]
+
