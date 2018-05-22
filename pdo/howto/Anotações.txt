@@ -1,0 +1,22 @@
+Após criado a estrutura
+
+raiz 
+    app
+        models
+        views
+        controllers
+        classes
+    public
+        index.php
+    composer.json
+    bootstrap.php
+    config.php
+
+é necessário executar o comando composer dump-autoload -o. 
+O dump-autoload fará com que o composer releia o arquivo composer.json para construir a lista de arquivos para autoload. A opção -o otimiza pacotes PSR0 e PSR4 para serem carregados com mapas de classes também, orientado fazer para a produção. 
+
+Após a execução do comando será criada a estrutura
+
+vendor 
+    autoload.php 
+    composer
