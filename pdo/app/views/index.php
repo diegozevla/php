@@ -17,7 +17,7 @@
         <![endif]-->
     </head>
     <body>
-        <h1 class="text-center">Hello World</h1>
+        <h1 class="text-center"><?php echo $userPage;?></h1>
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

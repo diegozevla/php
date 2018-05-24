@@ -6,7 +6,7 @@ return [
         "driver"    => "mysql",
         "dbname"    => "cursopdo",
         "username"  => "root",
-        "password"  => "lu!sf1235",
+        "password"  => "root",
         "charset"   => "utf8"
     ]
 ];
