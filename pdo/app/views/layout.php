@@ -17,7 +17,15 @@
         <![endif]-->
     </head>
     <body>
-        <h1 class="text-center"><?php echo $userPage;?></h1>
+        <div class="container">
+            <h1 class="text-center">Olá mundo</h1>
+
+            <div class="btn-group">
+                <a class="btn btn-default" href="/" role="button">Início</a>
+                <a class="btn btn-default" href="/create_user" role="button">Cadastrar Usuário</a>
+            </div>
+            <?php require $layout->load(); ?>
+        </div>
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

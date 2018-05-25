@@ -10,6 +10,6 @@ class Routes
             throw new \Exception("Rota não existe {$uri}", 1);
         }
 
-        return "../app/$routes[$uri]";
+        return "../app/$routes[$uri].php";
     }
 }
