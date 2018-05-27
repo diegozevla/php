@@ -20,3 +20,4 @@ Após a execução do comando será criada a estrutura
 vendor 
     autoload.php 
     composer
+
