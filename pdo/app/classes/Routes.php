@@ -6,10 +6,11 @@ class Routes
 {
     public static function load($routes, $uri)
     {
-        if (!array_key_exists($uri, $routes)) {
-            throw new \Exception("Rota não existe {$uri}", 1);
+        if (array_key_exists($uri, $routes)) {
+            return "../app/$routes[$uri].php";
         }
 
-        return "../app/$routes[$uri].php";
+        throw new \Exception("Rota não existe {$uri}", 1);
+
     }
 }
