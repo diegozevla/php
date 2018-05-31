@@ -9,4 +9,4 @@ use app\models\User;
 $user = new User;
 $users = $user->all();
 
-$layout->add('create_user');
+$layout->add('user_create');

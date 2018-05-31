@@ -10,8 +10,9 @@ use app\classes\Layout;
 // para funcionarem adequadamente é necessário configurar o arquivo .htaccess
 // e definir um host virtual
 $routes = [
-    '/' => 'controllers/index',
+    '/' => 'controllers/home',
     '/user_create' => 'controllers/user_create',
+    '/user_store' => 'controllers/user_store',
 ];
 
 // em uma url www.foobar.com/user_create deverá retornar /user_create
