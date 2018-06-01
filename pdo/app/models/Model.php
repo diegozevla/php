@@ -3,10 +3,13 @@
 namespace app\models;
 
 use app\models\Connection;
+use app\traits\PersistDB;
 
 abstract class Model
 {
     protected $connection;
+
+    use PersistDB;
 
     public function __construct()
     {
