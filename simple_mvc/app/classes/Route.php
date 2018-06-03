@@ -5,7 +5,7 @@ namespace app\classes;
 class Route {
 
     protected static $routes = [
-        '/' => 'controllers/index',
+        '/' => 'controllers/showUsers',
         '/users' => 'controllers/get_users',
         '/contact' => 'controllers/contact',
     ];
