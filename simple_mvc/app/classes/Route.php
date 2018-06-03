@@ -3,13 +3,20 @@
 namespace app\classes;
 
 class Route {
-    public static function getRoute($uri, $routes) {
-        if (array_key_exists($uri, $routes)) {
+
+    protected static $routes = [
+        '/' => 'controllers/index',
+        '/users' => 'controllers/get_users',
+        '/contact' => 'controllers/contact',
+    ];
+
+    public static function getRoute($uri) {
+        if (array_key_exists($uri, self::$routes)) {
             // retorna a rota solicitada
-            return "../app/{$routes[$uri]}.php";    
+            return '../app/' . self::$routes[$uri] . '.php';
         }
         
         // retorna index.php quando não encontrada uma rota
-        return "../app/{$routes['/']}.php";        
+        return '../app/' . self::$routes['/'] . '.php';
     }
 }

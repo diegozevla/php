@@ -4,8 +4,7 @@ namespace app\models;
 
 class Database
 {
-
-    private static $data = array(
+    public static $users = array(
         array("id" => 1, "name" => "Phillip", "email" => "Phasellus@arcu.co.uk"),
         array("id" => 2, "name" => "Mari", "email" => "Pellentesque.habitant@habitant.com"),
         array("id" => 3, "name" => "Rana", "email" => "neque.Nullam@vehicula.ca"),
@@ -107,26 +106,4 @@ class Database
         array("id" => 99, "name" => "Flynn", "email" => "nec.quam@sagittis.edu"),
         array("id" => 100, "name" => "Nigel", "email" => "fermentum.metus.Aenean@Integer.edu"),
     );
-
-    public static function getAllData()
-    {
-        return $data;
-    }
-
-    public static function findRecord($field, $value) {
-        
-        $rows_found = array();
-        
-        // verifico se o campo existe
-        if (array_key_exists($field, self::$data[0])) {
-            foreach (self::$data as $k => $v) {
-                if (strtolower(self::$data[$k][$field] === $value)) {
-                    array_push($rows_found, self::$data[$k]);
-                }
-            }
-        }
-
-        return $rows_found;		
-        
-    }
 }
