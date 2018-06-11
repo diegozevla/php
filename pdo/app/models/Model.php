@@ -20,9 +20,11 @@ abstract class Model
     {
         # $sql = "SELECT * FROM {$this->table}";
         $sql = "SELECT * FROM {$this->table}";
+        
         # ao usar o método prepare prepara a $sql para utilizar placeholders, tal como,
         # $sql = "SELECT * FROM {$this->table} WHERE id = :id";
         # outra vantagem do prepare é prevenir ataques do tipo sql injection
+
         $list = $this->connection->prepare($sql);
         $list->bindValue(':id', 1);
         # posteriormente especificar o valor de :id com o método bindValue
