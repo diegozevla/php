@@ -17,10 +17,8 @@
 
 <?php
 
-require_once __DIR__ . "/../config.php";
-require_once __DIR__ . "/../helper.php";
-
-//use \PDO;
+define('DS', DIRECTORY_SEPARATOR);
+require_once __DIR__ .DS. '..' .DS. 'bootstrap.php';
 
 // instancia o pdo
 $pdo = new PDO("{$config['driver']}:host={$config['host']};dbname={$config['dbname']};charset={$config['charset']}", $config['user'], $config['pass']);
@@ -41,18 +39,21 @@ $data->execute();
 $result = $data->fetchAll();
 ?>
 
-<table class="table table-striped table-hover">
-    <thead>
-        <tr>
-            <th>Nome</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach ($result as $value): ?>
-            <tr>
-                <td><?php echo $value->name ?></td>
-            </tr>
-        <?php endforeach; ?>
-    </tbody>
-</table>
+<div class="container">
+    <h1>Estados do Brasil</h1>
 
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($result as $value): ?>
+                <tr>
+                    <td><?php echo $value->name ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>
