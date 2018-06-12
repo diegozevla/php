@@ -20,7 +20,7 @@
 require_once __DIR__ . "/../config.php";
 require_once __DIR__ . "/../helper.php";
 
-use PDO;
+//use \PDO;
 
 // instancia o pdo
 $pdo = new PDO("{$config['driver']}:host={$config['host']};dbname={$config['dbname']};charset={$config['charset']}", $config['user'], $config['pass']);
