@@ -2,10 +2,10 @@
 
 define(DS, DIRECTORY_SEPARATOR);
 
-$arrayName = array(
+$config = array(
     'driver' => 'mysql',
     'host' => 'localhost',
-    'dbname' => '',
+    'dbname' => 'formulario_teste',
     'charset' => 'utf8',
     'user' => 'root',
-    'pass' => '');
+    'pass' => 'lu!sf1235');

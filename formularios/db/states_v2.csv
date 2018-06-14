@@ -1,0 +1,27 @@
+id,code,ibge_code,name,timezone
+1,AC,12,Acre,America/Rio_Branco
+2,AL,27,Alagoas,America/Maceio
+3,AP,16,Amapá,America/Belem
+4,AM,13,Amazonas,
+5,BA,29,Bahia,America/Bahia
+6,CE,23,Ceará,America/Fortaleza
+7,DF,53,Distrito Federal,America/Sao_Paulo
+8,ES,32,Espírito Santo,America/Sao_Paulo
+9,GO,52,Goiás,America/Sao_Paulo
+10,MA,21,Maranhão,America/Fortaleza
+11,MT,51,Mato Grosso,America/Cuiaba
+12,MS,50,Mato Grosso do Sul,America/Campo_Grande
+13,MG,31,Minas Gerais,America/Sao_Paulo
+14,PB,25,Paraíba,America/Fortaleza
+15,PA,15,Pará,
+16,PR,41,Paraná,America/Sao_Paulo
+17,PE,26,Pernambuco,America/Recife
+18,PI,22,Piauí,America/Fortaleza
+19,RJ,33,Rio de Janeiro,America/Sao_Paulo
+20,RN,24,Rio Grande do Norte,America/Fortaleza
+21,RS,43,Rio Grande do Sul,America/Sao_Paulo
+22,RO,11,Rondônia,America/Porto_Velho
+23,SP,35,São Paulo,America/Sao_Paulo
+24,SC,42,Santa Catarina,America/Sao_Paulo
+25,SE,28,Sergipe,America/Maceio
+26,TO,17,Tocantins,America/Araguaina

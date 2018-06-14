@@ -16,9 +16,13 @@
 </html>
 
 <?php
+//echo phpinfo();
+//die();
 
 define('DS', DIRECTORY_SEPARATOR);
 require_once __DIR__ .DS. '..' .DS. 'bootstrap.php';
+
+//use \PDO;
 
 // instancia o pdo
 $pdo = new PDO("{$config['driver']}:host={$config['host']};dbname={$config['dbname']};charset={$config['charset']}", $config['user'], $config['pass']);
@@ -37,23 +41,17 @@ $data = $pdo->prepare($query);
 $data->execute();
 
 $result = $data->fetchAll();
+
+dd($result);
 ?>
 
 <div class="container">
     <h1>Estados do Brasil</h1>
 
-    <table class="table table-striped table-hover">
-        <thead>
-            <tr>
-                <th>Nome</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($result as $value): ?>
-                <tr>
-                    <td><?php echo $value->name ?></td>
-                </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
+    <label for="Estados">Estados</label>
+    <select name="" id="">
+        <?php foreach ($result as $value): ?>
+            <option value=""><?php echo $value->name ?></option> 
+        <?php endforeach ?>
+    </select>
 </div>
