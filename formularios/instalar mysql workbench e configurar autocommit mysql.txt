@@ -1,0 +1,19 @@
+Para verificar onde está o arquivo de configuração do mysql
+
+mysqladmin --help OU mysqladmin --help --verbose
+
+As primeiras linhas geralmente informam onde ficam os arquivos
+de configuração (+1)
+
+Default options are read from the following files in the given order:
+/etc/my.cnf /etc/mysql/my.cnf ~/.my.cnf 
+
+Os arquivos são lidos em sequência e um valor sobreescreve o outro.
+
+==================================================================
+
+Para instalar o mysql workbench no debian 8
+
+You will need to install all the dependencies prior to installing MySQL Workbench.
+
+Try out this command: sudo apt-get install libgcc1 libgtkmm-2.4-1c2a libpcrecpp0 python mysql-workbench-data
