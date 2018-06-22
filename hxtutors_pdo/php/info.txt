@@ -1,0 +1,3 @@
+Git, para não rastrear alterações em um arquivo
+
+If you want to prevent committing (therefore also pushing) these local config files, you could use git update-index --assume-unchanged. Files marked with this flag will be assumed to never change (until you reset the flag with --no-assume-unchanged)
