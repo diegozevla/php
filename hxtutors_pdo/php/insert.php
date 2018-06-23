@@ -1,6 +1,7 @@
 <?php
 
-require_once 'connection.php';
+require_once 'bootstrap.php';
+require_once 'Connection.php';
 
 // tipo de consulta, sem tratamento, realizada como a função mysql (em desuso)
 // $usuarios = $pdo->query("SELECT * FROM pessoas");
@@ -14,8 +15,10 @@ $data_nascimento = $_GET['nascimento'];
 $email           = $_GET['email'];
 $pais            = $_GET['pais'];
 
+$connection = new MeuProjeto\Connection;
+$pdo = $connection->getConnection();
 
-$inserir_pessoa = $pdo->prepare("INSERT INTO pessoas (nome, data_nascimento, email, pais) VALUES (:nome, :data_nascimento, :email, :pais)");
+$inserir_pessoa = $pdo->prepare("INSERT INTO Pessoas (nome, data_nascimento, email, pais) VALUES (:nome, :data_nascimento, :email, :pais)");
 
 $inserir_pessoa->bindValue(':nome', $nome);
 $inserir_pessoa->bindValue(':data_nascimento', $data_nascimento);
