@@ -29,6 +29,3 @@ if ($inserido) {
 } else {
     echo "<p>Houve algum erro na inserção do registro.</p>";
 }
-
-
-
