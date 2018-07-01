@@ -34,55 +34,59 @@
                 <h1 class="text-center">Cadastrar Usuário</h1>
 
                 <form action="" method="POST" role="form">
+                    <legend>Cadastrar Usuário</legend>
+                    
                     <div class="form-group">
-                        <legend>Cadastrar Usuário</legend>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label for="nome">Nome:</label>
-                                <input type="text" class="form-control" name="nome" id="nome">
-                            </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <label for="nome">Nome:</label>
+                            <input type="text" class="form-control" name="nome" id="nome">
                         </div>
                     </div>
                         
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label for="sobrenome">Sobrenome:</label>
-                                <input type="text" class="form-control" name="sobrenome" id="sobrenome">
-                            </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <label for="sobrenome">Sobrenome:</label>
+                            <input type="text" class="form-control" name="sobrenome" id="sobrenome">
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <div class="row">
-                        <div class="col-md-6">
-                            <fieldset>
-                                <legend>Selecione um gênero</legend>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="genero[]" id="homem" value="Homem" checked="checked">
-                                        Homem
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="genero[]" id="Mulher" value="Mulher">
-                                        Mulher
-                                    </label>
-                                </div>
-                            </fieldset>
-                            
-                        </div>
-                        </div>
-                        
+                    <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="" id="input${1/(\w+)/\u\1/g}" value="" checked="checked">
+                            Radio Box
+                        </label>
                     </div>
-                                    
+                    
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="" id="input${1/(\w+)/\u\1/g}" value="" checked="checked">
+                            Radio Box
+                        </label>
+                    </div>
+                    </div>
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="row">
+                    <label for="input-id" class="col-sm-2">Estado</label>
+                    
+                    <select name="" id="input${1/(\w+)/\u\1/g}" class="form-control col-sm-8">
+                        <option value="">-- Select One --</option>
+                    </select>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
                     <button type="submit" class="btn btn-primary">Submit</button>
-
-
                 </form>
 
 
